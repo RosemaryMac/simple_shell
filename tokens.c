@@ -11,13 +11,13 @@ char **tokening(char *buffer, const char *s)
 	char *token = NULL, **commands = NULL;
 	size_t bufsize = 0;
 	int i = 0;
-	
+
 	if (buffer == NULL)
 		return (NULL);
-	
+
 	bufsize = _strlen(buffer);
 	commands = malloc((bufsize + 1) * sizeof(char *));
-	
+
 	if (commands == NULL)
 	{
 		perror("Unable to allocate buffer");
@@ -26,7 +26,7 @@ char **tokening(char *buffer, const char *s)
 		exit(EXIT_FAILURE);
 	}
 	token = strtok(buffer, s);
-	
+
 	while (token != NULL)
 	{
 		commands[i] = malloc(_strlen(token) + 1);

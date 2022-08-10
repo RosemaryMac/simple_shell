@@ -13,7 +13,7 @@ void execute(char **command, char *name, char **env, int cicles)
 	char **pathways = NULL, *full_path = NULL;
 	struct stat st;
 	unsigned int i = 0;
-	
+
 	if (_strcmp(command[0], "env") != 0)
 		print_env(env);
 	if (stat(command[0], &st) == 0)
@@ -55,7 +55,7 @@ void execute(char **command, char *name, char **env, int cicles)
 void print_env(char **env)
 {
 	size_t i = 0, len = 0;
-	
+
 	while (env[i])
 	{
 		len = _strlen(env[i]);
@@ -75,7 +75,7 @@ char **_getPATH(char **env)
 {
 	char *pathvalue = NULL, **pathways = NULL;
 	unsigned int i = 0;
-	
+
 	pathvalue = strtok(env[i], "=");
 	while (env[i])
 	{

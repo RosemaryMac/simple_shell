@@ -99,7 +99,7 @@ void shell_exit(char **command)
 		free_dp(command);
 		exit(EXIT_SUCCESS);
 	}
-	
+
 	sta_tus = _atoi(command[1]);
 	free_dp(command);
 	exit(sta_tus);

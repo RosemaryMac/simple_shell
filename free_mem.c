@@ -8,7 +8,7 @@
 void free_dp(char **command)
 {
 	size_t i = 0;
-	
+
 	if (command == NULL)
 		return;
 	while (command[i])
@@ -29,7 +29,7 @@ void free_dp(char **command)
 void free_exit(char **command)
 {
 	size_t i = 0;
-	
+
 	if (command == NULL)
 		return;
 	while (command[i])

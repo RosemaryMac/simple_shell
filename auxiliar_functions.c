@@ -9,7 +9,7 @@
 int _strcmp(char *s1, char *s2)
 {
 	unsigned int i = 0;
-	
+
 	while (s1[i])
 	{
 		if (s1[i] != s2[i])
@@ -27,7 +27,7 @@ int _strcmp(char *s1, char *s2)
 unsigned int _strlen(char *s)
 {
 	unsigned int len = 0;
-	
+
 	while (s[len])
 		len++;
 	return (len);
@@ -42,7 +42,7 @@ unsigned int _strlen(char *s)
 char *_strcpy(char *dest, char *src)
 {
 	char *aux = dest;
-	
+
 	while (*src)
 		*dest++ = *src++;
 	*dest = '\0';
@@ -58,7 +58,7 @@ char *_strcpy(char *dest, char *src)
 char *_strcat(char *dest, char *src)
 {
 	char *temp = dest;
-	
+
 	while (*dest)
 		dest++;
 	*dest++ = '/';
@@ -77,7 +77,7 @@ int _atoi(char *s)
 	int sign = 1;
 	unsigned int total = 0;
 	char null_flag = 0;
-	
+
 	if (s == NULL)
 		return (0);
 	while (*s)
