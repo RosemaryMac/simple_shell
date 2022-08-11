@@ -52,7 +52,7 @@ int main(int ac, char **av, char **env)
 void prompt(void)
 {
 	if (isatty(STDIN_FILENO))
-		write(STDOUT_FILENO, "$");
+		write(STDOUT_FILENO, "$", 2);
 }
 
 /**
@@ -63,7 +63,7 @@ void prompt(void)
 void handle(int signals)
 {
 	(void)signals;
-	write(STDOUT_FILENO, "$\n");
+	write(STDOUT_FILENO, "$\n", 3);
 }
 
 /**
