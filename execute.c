@@ -57,7 +57,7 @@ void print_env(char **env)
 	extern char **environ;
 	env = environ;
 	
-	for (env; *env; env++)
+	for (; *env; env++)
 	{
 		printf("%s\n", *env);
 	}
